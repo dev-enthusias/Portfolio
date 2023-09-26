@@ -9,118 +9,151 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header class="hero-section">
+    <header class="hero">
       <nav class="nav-bar">
+        <div class="logo">
+          <!-- <span class="circle circle--blue"></span> -->
+          <span class="logo__text">ODG</span>
+          <!-- <span class="circle circle--red"></span> -->
+        </div>
         <ul class="nav-links">
           <li class="nav-link"><a href="#about">About</a></li>
           <li class="nav-link"><a href="#project">Projects</a></li>
-          <li class="nav-link"><a href="#resume">Resume</a></li>
+          <!-- <li class="nav-link"><a href="#resume">Resume</a></li> -->
           <li class="nav-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="hero-content">
+      <section class="hero__content">
         <div class="left">
           <h1 class="hero-title">
-            <span class="greeting">Hello It's me...</span>Joshua
+            <span class="greeting">Hello It's me...</span>
+            <span>Anakor</span>
+            <span>Joshua</span>
           </h1>
           <p>
-            <a href="becomingadev@gmail.com">becomingadev@gmail.com</a>
+            <a
+              href="mailto:becomingadev@gmail.com?subject=Subject%20Contact me
+              "
+              class="profile__email"
+              >becomingadev@gmail.com</a
+            >
           </p>
-          <h3>Front-end <br />Web Developer</h3>
+          <h3 class="orofile__job">Frontend Web Developer</h3>
         </div>
+
         <div class="right">
+          <!-- <div class="profile-img--wrapper">
+            <img
+              src="photo.jpeg"
+              alt="My profile picture"
+              class="profile-img"
+            />
+          </div> -->
           <p class="hero-about">
-            Now the designers are done sketching out your ideas, allow me turn
-            it into a responsive site available to all
+            I am a Frontend Developer with experience in building interactive
+            front end websites using React and Tailwindcss as well as NodeJs for
+            the backend development of web apps
           </p>
-          <ul>
-            <li><a href="/">Twitter</a></li>
-            <li><a href="/">Linkedin</a></li>
-            <li><a href="/">Github</a></li>
+          <ul class="social">
+            <li class="social__link">
+              <a href="https://twitter.com/webdev_everyday">Twitter</a>
+            </li>
+            <li class="social__link">
+              <a href="https://www.linkedin.com/in/an-josh/">Linkedin</a>
+            </li>
+            <li class="social__link">
+              <a href="https://github.com/dev-enthusias">Github</a>
+            </li>
           </ul>
         </div>
-      </div>
+      </section>
     </header>
 
-    <section class="project-section">
+    <section class="project-section" id="project">
       <h2 class="project-section-title">Projects</h2>
       <div class="projects">
         <div class="project-card project1">
-          <div class="img"></div>
+          <div class="img">
+            <img src="./project1.png" alt="" class="p-img" />
+          </div>
           <div class="project-card__text">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h2>Movie Box</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              quo non veritatis at facilis perferendis ad illum iste dicta sint
+              MovieBox is a popular web application that allowed users to stream
+              and download movies and TV shows for free. It offered a vast
+              library of content, including the latest releases and classic
+              films. Users could access MovieBox from various platforms,
+              including mobile, and web browsers.
             </p>
             <div class="buttons">
-              <button class="btn">View Project</button>
-              <button class="btn">Source File</button>
+              <button class="btn">
+                <a href="https://sparkling-biscuit-626a38.netlify.app">
+                  View Project
+                </a>
+              </button>
+              <button class="btn">
+                <a
+                  href="https://github.com/dev-enthusias/hngx_2-movie_app"
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              </button>
             </div>
           </div>
         </div>
-        <div class="project-card project2">
-          <div class="img"></div>
-          <div class="project-card__text">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              quo non veritatis at facilis perferendis ad illum iste dicta sint
-            </p>
-            <div class="buttons">
-              <button class="btn">View Project</button>
-              <button class="btn">Source File</button>
-            </div>
+        <div class="project-card project1">
+          <div class="img">
+            <img src="./project2.png" alt="" class="p-img" />
           </div>
-        </div>
-        <div class="project-card project3">
-          <div class="img"></div>
           <div class="project-card__text">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h2>Nigerian Clinical Physiologist</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              quo non veritatis at facilis perferendis ad illum iste dicta sint
+              Nigerian Clinical physiologist is a responsive website for a
+              non-profit organization based in Nigeria where people gather to
+              receive information about new developments or register for thier
+              upcoming program
             </p>
             <div class="buttons">
-              <button class="btn">View Project</button>
-              <button class="btn">Source File</button>
-            </div>
-          </div>
-        </div>
-        <div class="project-card project4">
-          <div class="img"></div>
-          <div class="project-card__text">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              quo non veritatis at facilis perferendis ad illum iste dicta sint
-            </p>
-            <div class="buttons">
-              <button class="btn">View Project</button>
-              <button class="btn">Source File</button>
+              <button class="btn">
+                <a href="https://clinicalphysiologistsnigeria.org.ng/">
+                  View Project
+                </a>
+              </button>
+              <button class="btn" disabled style="cursor: not-allowed">
+                <a> View Project </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-section">
-      <h2 class="about-title">ABOUT ME</h2>
-      <p>
-        I am Anakor Joshua, a disciplined Front-end Web Developer with a degree
-        in Computer Engineering, who has collaborated with few product desinger
-        and some Back-end developer to create responsive and interactive web
-        sites for a wonderful user experience. Honestly speaking, I don't have
-        any work experience as I am still looking to land my first job. However,
-        I am open minded to learning and I also like to share my knowledge with
-        other poeple. I also like to play chess in my spare time.
-      </p>
-      <blockquote>
-        "I belive learning never ends and in any field one has chosen to abide
-        in, he/she should subject himself/herself to learn what is necessary"
-      </blockquote>
+
+    <section class="about-section" id="about">
+      <div class="profile-img--wrapper">
+        <img src="photo.jpeg" alt="My profile picture" class="profile-img" />
+      </div>
+      <div>
+        <h2 class="about-title">ABOUT ME</h2>
+        <p>
+          I am Anakor Joshua, a disciplined Front-end Web Developer with a
+          degree in Computer Engineering, who has collaborated with few product
+          desinger and some Back-end developer to create responsive and
+          interactive web sites for a wonderful user experience. Honestly
+          speaking, I don't have any work experience as I am still looking to
+          land my first job. However, I am open minded to learning and I also
+          like to share my knowledge with other poeple. I also like to play
+          chess in my spare time.
+        </p>
+        <blockquote>
+          "I belive learning never ends and in any field one has chosen to abide
+          in, he/she should subject himself/herself to learn what is necessary"
+        </blockquote>
+      </div>
     </section>
-    <section class="contact-section">
+
+    <section id="contact" class="contact-section">
       <div class="contact-section-content">
         <div class="other-contactinfo">
           <h2>Get in Touch</h2>
@@ -134,15 +167,30 @@
           <h2>Contacts</h2>
           <p>Feel free to reach me across any platform you comfortable with</p>
           <ul>
-            <li><a href="/">becomingadev@gmail.com</a></li>
-            <li><a href="/">Twitter</a></li>
-            <li><a href="/">Linkedin</a></li>
-            <li><a href="/">whatsApp</a></li>
+            <li>
+              <a
+                href="mailto:becomingadev@gmail.com?subject=Subject%20Contact me
+              "
+                class="profile__email"
+                >becomingadev@gmail.com</a
+              >
+            </li>
+            <li class="social__link">
+              <a href="https://twitter.com/webdev_everyday">Twitter</a>
+            </li>
+            <li class="social__link">
+              <a href="https://www.linkedin.com/in/an-josh/">Linkedin</a>
+            </li>
+            <li class="social__link">
+              <a href="https://github.com/dev-enthusias">Github</a>
+            </li>
           </ul>
         </div>
       </div>
-      <p class="credit">Designed and developed by Anakor Joshua</p>
-      <p class="copyright">© 2022, All rights reserved.</p>
+      <div class="credits">
+        <p class="credit">Designed and developed by Anakor Joshua</p>
+        <p class="copyright">© 2023, All rights reserved.</p>
+      </div>
     </section>
   </body>
 </html>
